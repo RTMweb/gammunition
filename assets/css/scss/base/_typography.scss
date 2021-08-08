@@ -1,0 +1,35 @@
+h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media (min-width: 640px) {
+    font-size: 12rem;
+  }
+}
+
+h2 {
+  font-size: clamp(6rem, 6vw, 8rem);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: clamp(3rem, 4vw, 4rem);
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.subhead1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.subhead2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 100;
+}

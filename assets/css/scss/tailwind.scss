@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'vendors/hamburger';
+@import 'vendors/hamburgers-settings';
+
+@import 'base/reset';
+@import 'base/typography';
+
+html,
+body {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(45%, 1vw, 62.5%);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
+  @media (min-width: 1536px) {
+    max-width: 1536px;
+  }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.center {
+  @include margin-auto;
+  @include text-container;
+}

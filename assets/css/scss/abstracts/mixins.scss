@@ -1,0 +1,25 @@
+@mixin text-container {
+    max-width: 80%;
+
+    @media (min-width: 640px) {
+        max-width: 70%;
+    }
+    @media (min-width: 768px) {
+        max-width: 75%;
+    }
+    @media (min-width: 1024px) {
+        max-width: 60%;
+    }
+}
+
+@mixin margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin section-padding {
+    padding-top: $padding;
+    padding-bottom: $padding;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
