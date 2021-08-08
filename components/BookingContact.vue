@@ -16,7 +16,7 @@
       async
     ></script>
     <!-- Calendly inline widget end -->
-    <h2 class="my-10">Contact</h2>
+    <h2 class="my-10">Contacts</h2>
 
     <div class="max-w-2xl mx-auto text-left">
       <form class="w-full space-y-4" @submit.prevent="onClick">
